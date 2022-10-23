@@ -122,11 +122,11 @@ class MainActivity : AppCompatActivity() {
 
                     val location: Location? = task.result
                     if (location == null) {
-                        Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "Error In Fetching Current Location", Toast.LENGTH_SHORT).show()
 
                     } else {
 //                        get weather here
-                        Toast.makeText(this, "L", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "Location Fetching SuccessFul", Toast.LENGTH_SHORT).show()
 
                         fetchCurrentLocationWeather(
                             location.latitude.toString(),
